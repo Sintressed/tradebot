@@ -2,7 +2,7 @@ import discord
 import requests
 
 # 🔧 Replace with your bot token and n8n webhook URL
-DISCORD_TOKEN = 'MTQyMjM1MjA4NjA0OTM2MjA0MQ.Ge8Lhk.Fsnq1IbfCK9fCCCaoEp9Gb8G6ptaqHnkyfLZVc'
+DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
 N8N_WEBHOOK_URL = 'https://sintressed.app.n8n.cloud/webhook/bc03a788-05ac-42ab-a906-f0c959907eef'
 
 # Set up the bot with required intents
@@ -44,3 +44,4 @@ async def on_message(message):
 
 # Run the bot
 client.run(DISCORD_TOKEN)
+
