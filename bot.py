@@ -1,5 +1,6 @@
 import discord
 import requests
+import os
 
 # 🔧 Replace with your bot token and n8n webhook URL
 DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
@@ -44,4 +45,5 @@ async def on_message(message):
 
 # Run the bot
 client.run(DISCORD_TOKEN)
+
 
